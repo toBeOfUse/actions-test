@@ -1,0 +1,44 @@
+{
+  "name": "typical-node-project",
+  "version": "0.1.0",
+  "description": "testing out a github action in a typical node.js project",
+  "main": "index.ts",
+  "scripts": {
+    "main": "tsx index.ts",
+    "test": "jest",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toBeOfUse/actions-test.git"
+  },
+  "author": "toBeOfUse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toBeOfUse/actions-test/issues"
+  },
+  "homepage": "https://github.com/toBeOfUse/actions-test#readme",
+  "dependencies": {
+    "@sanity/client": "^6.20.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
+    "@storybook/addon-essentials": "^8.1.9",
+    "@storybook/addon-interactions": "^8.1.9",
+    "@storybook/addon-links": "^8.1.9",
+    "@storybook/addon-onboarding": "^8.1.9",
+    "@storybook/blocks": "^8.1.9",
+    "@storybook/react": "^8.1.9",
+    "@storybook/react-vite": "^8.1.9",
+    "@storybook/test": "^8.1.9",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "storybook": "^8.1.9",
+    "ts-jest": "^29.1.5",
+    "tsx": "^4.15.5",
+    "typescript": "^5.4.5"
+  }
+}
