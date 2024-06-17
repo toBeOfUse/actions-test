@@ -18,6 +18,6 @@ jobs:
         with:
           node-version: 20.x
           cache: 'npm'
-      - run: yarn install --frozen-lockfile
+      - run: npm install
       - name: Finally do stuff
         uses: ./.github/actions/test-action
