@@ -7,13 +7,16 @@
     "main": "tsx index.ts",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_e40b6d67d6b8e31"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/toBeOfUse/actions-test.git"
   },
-  "author": "toBeOfUse",
+  "author": {
+    "name": "toBeOfUse"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/toBeOfUse/actions-test/issues"
