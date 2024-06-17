@@ -44,7 +44,6 @@ export const SanityContent: Story = {
   args: {
     ...FixedContent.args,
   },
-  // @ts-ignore no idea why it's expecting the wrong type here.
   render: function Render(
     args,
     { loaded: { post } }: { loaded: { post: SanityPost } }
