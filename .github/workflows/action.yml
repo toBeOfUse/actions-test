@@ -1,15 +1,23 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: diagnostics-monitor
+run-name: Diagnostics Monitor Attempt
 on: [push]
 jobs:
   track-diagnostics:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out self
+        uses: actions/checkout@v4
+      - name: Check out private action
         uses: actions/checkout@v4
         with:
           repository: toBeOfUse/test-action
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           path: ./.github/actions/test-action
-      - name: Run my action
+      - name: Configure Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'npm'
+      - run: yarn install --frozen-lockfile
+      - name: Finally do stuff
         uses: ./.github/actions/test-action
