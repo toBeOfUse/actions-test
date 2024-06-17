@@ -21,3 +21,7 @@ jobs:
       - run: npm install
       - name: Finally do stuff
         uses: ./.github/actions/test-action
+        with:
+          issue-bot-app-id: ${{ secrets.BOT_APP_ID }}
+          issue-bot-private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+
