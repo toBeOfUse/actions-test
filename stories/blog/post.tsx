@@ -25,7 +25,7 @@ const BlogPost = ({
   return (
     <Card sx={{ width: 600, margin: "20px auto" }}>
       <CardContent>
-        <Typography variant="h4" component="div" gutterBottom>
+        <Typography variant="h5" component="div" gutterBottom>
           {title}
         </Typography>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
@@ -38,7 +38,7 @@ const BlogPost = ({
             Written on {date} by {author}
           </Typography>
         </div>
-        <Typography variant="body1" margin="20px auto">
+        <Typography variant="body1" margin="15px auto">
           {content}
         </Typography>
         <div
