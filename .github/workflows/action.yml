@@ -24,4 +24,5 @@ jobs:
         with:
           issue-bot-app-id: ${{ secrets.BOT_APP_ID }}
           issue-bot-private-key: ${{ secrets.BOT_PRIVATE_KEY }}
-
+          supabase-url: ${{ secrets.SUPABASE_URL }}
+          supabase-key: ${{ secrets.SUPABASE_KEY }}

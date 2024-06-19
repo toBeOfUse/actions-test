@@ -83,7 +83,10 @@ export const LikeTest: Story = {
     const canvas = within(canvasElement);
 
     // unliked
-    await expect(canvas.getByTestId("FavoriteBorderIcon")).toBeInTheDocument();
+    // await expect(canvas.getByTestId("FavoriteBorderIcon")).toBeInTheDocument();
+
+    // should fail:
+    await expect(canvas.getByTestId("FavoriteBorderIcon")).not.toBeInTheDocument();
 
     // liked
     await userEvent.click(canvas.getByTestId("like_button"));
