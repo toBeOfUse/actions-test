@@ -18,7 +18,8 @@ jobs:
         with:
           node-version: 20.x
           cache: 'npm'
-      - run: npm install
+      - run: npm install --ci
+      - run: npx playwright install --with-deps
       - name: Finally do stuff
         uses: ./.github/actions/test-action
         with:
