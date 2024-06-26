@@ -13,4 +13,13 @@ describe("string reversing function reverses strings", () => {
     test("can reverse 'hello'", () => {
         expect(reverseAString("hello")).toEqual("olleh")
     });
+    test("will crash and burn", () => {
+        expect(false).toBe(true);
+    });
+    test("will also crash and burn", () => {
+        expect(false).toBe(true);
+    });
+    test("will also also crash and burn", () => {
+        expect(false).toBe(true);
+    });
 });

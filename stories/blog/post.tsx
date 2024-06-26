@@ -6,7 +6,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 interface IBlogPostProps {
   title: string;
   author: string;
-  date: string;
+  date: Date;
   content: string;
   authorImage: string;
   liked: boolean;
@@ -35,7 +35,7 @@ const BlogPost = ({
             color="text.secondary"
             component="span"
           >
-            Written on {date} by {author}
+            Written on {date.toDateString()} by {author}
           </Typography>
         </div>
         <Typography variant="body1" margin="15px auto">
