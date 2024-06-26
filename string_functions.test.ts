@@ -19,4 +19,7 @@ describe("string reversing function reverses strings", () => {
     test("will also crash and burn", () => {
         expect(false).toBe(true);
     });
+    test("will also also crash and burn", () => {
+        expect(false).toBe(true);
+    });
 });
